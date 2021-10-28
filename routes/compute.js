@@ -11,7 +11,7 @@ router.get('/', function (req, res, next) {
   //console.log(Number(search_params.get("x"))+"hello")
   if (storeValue == 0)
     storeValue = Math.random()
-  res.write("Computes the values for Math.atan and math.exp function." + "\n")
+  res.write("Computes the values for Math.hypot,Math.ceil  and math.cl32 function." + "\n")
   res.write('Math.atan applied to ' + storeValue + " is " + Math.hypot(storeValue) + "\n");
   res.write('Math.atan applied to ' + storeValue + " is " + Math.ceil(storeValue) + "\n");
   res.end('Math.exp applied to ' + storeValue + " is " + Math.clz32(storeValue));
